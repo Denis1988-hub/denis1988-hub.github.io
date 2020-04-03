@@ -261,7 +261,7 @@ header {
 }
 
 
-/*  Когда кнопка нажиматься перестанет, исчезает желтый обретает невидммый цвет */
+/*  Когда кнопка нажиматься перестанет исчезает желтый обретает невидммый цвет */
 
 .slick-btn.slick-disabled {
     cursor: default;
@@ -570,7 +570,7 @@ header {
 
 .advantages__item {
     max-width: 360px;
-    page-break-after: 0px 20px;
+    padding: 0px 20px;
     ]
 }
 
@@ -578,5 +578,34 @@ header {
     font-size: 18px;
     line-height: 24px;
     font-weight: 500;
+    font-family: 'Roboto', sans-serif;
     padding: 60px 0px 15px;
+    position: relative;
+
+}
+.advantages__title:before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffc222;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advantages__title:after{
+    content: "\f00c";
+    font-family: 'icomoon';
+    font-size: 14px;
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advantages__text{
+    line-height: 24px;
+    color: #d3d2d2;
+    letter-spacing: 1px;
 }
