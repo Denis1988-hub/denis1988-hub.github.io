@@ -8,6 +8,7 @@ $(function(){
         infinite: false
     });
     /*  Стилизация селектов */
+    $('select').styler();
 
 
 
