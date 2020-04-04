@@ -125,7 +125,7 @@ header {
 }
 
 .header__content {
-    padding: 34px 0px 23px;
+    padding: 34px 0 23px;
 }
 
 .header__content-inner {
@@ -348,6 +348,9 @@ header {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 10px;
 }
+.form label select a{
+    color: #212020;
+}
 
 .services__text,
 .form__text,
@@ -393,12 +396,12 @@ header {
     line-height: 24px;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
-    padding: 24px 0px;
+    padding: 24px 0;
 }
 
 .services__item-text {
     letter-spacing: 0.1px;
-    padding: 0px 30px 30px;
+    padding: 0 30px 30px;
 }
 
 .services__item-btn {
@@ -443,7 +446,7 @@ header {
     background-position: center;
     min-height: 300px;
     background-repeat: no-repeat;
-    padding: 25px 0px 45px;
+    padding: 25px 0 45px;
 }
 
 .about__inner {
@@ -454,7 +457,7 @@ header {
 /*   Налрист "О компании"   */
 
 .about__title {
-    padding: 10px 0px 25px;
+    padding: 10px 0 25px;
     font-size: 24px;
     /*  Размер шрифта   */
     line-height: 24px;
@@ -530,7 +533,7 @@ header {
     outline: none;
     height: 48px;
     border: 1px solid #e6e6e6;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 .form__box-inner select {
@@ -559,7 +562,7 @@ header {
 }
 
 .advantages {
-    padding: 55px 0px 40px;
+    padding: 55px 0 40px;
     background-image: url(../img/advantages.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -752,4 +755,69 @@ header {
 }
 .footer__info{
     max-width: 360px;
+}
+.footer__list{
+    padding-top: 10px;
+}
+.footer__list li{
+    margin-top: 10px;
+}
+.footer__list a{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 33px;
+    position: relative;
+}
+.footer__list a:before{
+    content: '\f003';
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+    font-family: "icomoon";
+
+
+}
+.footer__list .footer__phone:before{
+    content: '\f095';
+    font-family: "icomoon";
+    left: 3px;
+}
+.footer__list .footer_address:before{
+    content: '\f041';
+    font-family: "icomoon";
+    left: 3px;
+}
+.footer__copy{
+    background-color: #303030;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 8px 0;
+    color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+}
+
+#modal{
+    width: 300px;
+    background-color: #303030;
+}
+
+#modal input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    padding: 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+#modal input[type="submit"]{
+    background-color: #ffc222;
+    border: none;
 }
